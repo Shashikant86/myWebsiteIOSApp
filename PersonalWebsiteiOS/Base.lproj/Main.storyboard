@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PersonalWebsiteiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="ikX-hM-9p2">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.038735274869109992" green="0.010440471413478236" blue="0.012317244027046533" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="SHASHIKANT JAGTAP" id="QfB-XF-ykU">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="oR8-7D-GQo">
+                                            <color key="tintColor" red="0.035087764889999998" green="1" blue="0.0049988518190000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="TiS-9N-rd4">
+                                            <color key="tintColor" red="0.035087764889999998" green="1" blue="0.0049988518190000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wzg-dF-cKs">
+                                <rect key="frame" x="0.0" y="72" width="320" height="496"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ikX-hM-9p2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="953-jP-UX5"/>
+                            <constraint firstItem="Wzg-dF-cKs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="BXD-q8-CDm"/>
+                            <constraint firstItem="Wzg-dF-cKs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="20" id="KAL-5V-xhu"/>
+                            <constraint firstItem="Wzg-dF-cKs" firstAttribute="top" secondItem="ikX-hM-9p2" secondAttribute="bottom" id="WN3-S7-aLo"/>
+                            <constraint firstItem="ikX-hM-9p2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nyt-Za-hxD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wzg-dF-cKs" secondAttribute="bottom" constant="20" id="qQW-wC-cY1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ikX-hM-9p2" secondAttribute="trailing" constant="-20" id="zKY-6D-EDm"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="webView" destination="Wzg-dF-cKs" id="oxY-KU-G5f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="297"/>
+        </scene>
+    </scenes>
+</document>
